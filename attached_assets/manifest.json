@@ -1,0 +1,452 @@
+[
+  {
+    "path": "0_7_1790611121489.png",
+    "bytes": 654245,
+    "sha256": "91113a8995e377ee2a591c2ecc682ae455ba13efbfdfd9dd6f07be7ec01cfd63",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "91113a8995e377ee2a591c2ecc682ae455ba13efbfdfd9dd6f07be7ec01cfd63",
+    "repositoryBytes": 654245,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "0_58bd8635-e67d-464f-b5fe-9625b044b951_1790242188192.JPG",
+    "bytes": 117497,
+    "sha256": "30bc7f9389bc1fa176f1ac384eb1ce5540a82c6c48446539b0e82e497ed43c18",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "30bc7f9389bc1fa176f1ac384eb1ce5540a82c6c48446539b0e82e497ed43c18",
+    "repositoryBytes": 117497,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "0_fc276216-88b3-4a90-8fc8-a1291321589c_1790242154829.JPG",
+    "bytes": 407855,
+    "sha256": "6c1d60767da863ab1636bc29f0e6d4cf9b1709e2bee55e0378fa8aab5ed9a954",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "6c1d60767da863ab1636bc29f0e6d4cf9b1709e2bee55e0378fa8aab5ed9a954",
+    "repositoryBytes": 407855,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "1_6_1790611121490.png",
+    "bytes": 2969582,
+    "sha256": "89f88f99c834f79eaa17a3735b849f0fa3cecf1a06d05531a7f1d01164a38d50",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "89f88f99c834f79eaa17a3735b849f0fa3cecf1a06d05531a7f1d01164a38d50",
+    "repositoryBytes": 2969582,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "1_24853459-1eba-4924-996c-ac6ddfd28142_1790242154829.JPG",
+    "bytes": 109405,
+    "sha256": "0fc92f867366ef05bfc9eba7f10f0f78238b0543ef3897259288b8447e6c7071",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "0fc92f867366ef05bfc9eba7f10f0f78238b0543ef3897259288b8447e6c7071",
+    "repositoryBytes": 109405,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "1_abd95629-ffdf-4647-9419-194f9bc09780_1790242188193.JPG",
+    "bytes": 104842,
+    "sha256": "1fa22a4fa98767d8a1330adfce8fc2f48008ca18d98d7c81f4f56f4279fc6d5f",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "1fa22a4fa98767d8a1330adfce8fc2f48008ca18d98d7c81f4f56f4279fc6d5f",
+    "repositoryBytes": 104842,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "1b7ca76c-7eea-46da-a4e9-e2b92d4a403c_1790634005027.JPG",
+    "bytes": 430640,
+    "sha256": "96ab16d2c8356fa96a7775024545b90e2b82e285f0bbd0f10d670ebf9484a096",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "96ab16d2c8356fa96a7775024545b90e2b82e285f0bbd0f10d670ebf9484a096",
+    "repositoryBytes": 430640,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "2_2f2861f7-24b2-447a-b89c-7833d6f55334_1790242188193.JPG",
+    "bytes": 120644,
+    "sha256": "4ec08706ef39d02aa6ffbbb9ae68a4be8742fd54022d4ba64f657b40f70703c8",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "4ec08706ef39d02aa6ffbbb9ae68a4be8742fd54022d4ba64f657b40f70703c8",
+    "repositoryBytes": 120644,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "2_5_1790611121490.png",
+    "bytes": 1942434,
+    "sha256": "a0d0c9bd8f64dce5e68135a9666b29ab3dee99fac3a09d0f4f4fad90076068e4",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "a0d0c9bd8f64dce5e68135a9666b29ab3dee99fac3a09d0f4f4fad90076068e4",
+    "repositoryBytes": 1942434,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "2_1378efdb-051c-4853-a8d5-022d749d1289_1790242154829.JPG",
+    "bytes": 169137,
+    "sha256": "3104c4a8ed7913f5694e127f10859002b8cdd31731788361518bfa47f2ef2da3",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "3104c4a8ed7913f5694e127f10859002b8cdd31731788361518bfa47f2ef2da3",
+    "repositoryBytes": 169137,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "3_4_1790611121490.png",
+    "bytes": 1471364,
+    "sha256": "451d0e26e93f947b66a09a324a1d1618d126715c947f12651333d915f0f763d7",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "451d0e26e93f947b66a09a324a1d1618d126715c947f12651333d915f0f763d7",
+    "repositoryBytes": 1471364,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "3_9454cd30-835a-4c90-bb42-a1229c67238c_1790242154829.JPG",
+    "bytes": 125095,
+    "sha256": "ab4c6d87d6d3a031300125ae73f219da3eefbc6965792784417e3c5b60f7157d",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "ab4c6d87d6d3a031300125ae73f219da3eefbc6965792784417e3c5b60f7157d",
+    "repositoryBytes": 125095,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "3_c8a2bf64-f1e4-49d1-b071-9a50207e3f61_1790242188193.JPG",
+    "bytes": 183554,
+    "sha256": "4cba80b6b6ef636b285fe1a42543a29e2ee46801e51c67b16cd128b2952cc759",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "4cba80b6b6ef636b285fe1a42543a29e2ee46801e51c67b16cd128b2952cc759",
+    "repositoryBytes": 183554,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "3bfe3e82-6879-44ab-90f5-09cfee8ed6fd_1790631664902.jpeg",
+    "bytes": 608767,
+    "sha256": "8a528852000a0f237e5f9808cadc7208a22f50a5c186f2c2178484e51c47630a",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "8a528852000a0f237e5f9808cadc7208a22f50a5c186f2c2178484e51c47630a",
+    "repositoryBytes": 608767,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "4_3_1790611121491.png",
+    "bytes": 775257,
+    "sha256": "704138ee9e914c2955519b55d8cb35edf808a452856780acc6a9a45bead0de2c",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "704138ee9e914c2955519b55d8cb35edf808a452856780acc6a9a45bead0de2c",
+    "repositoryBytes": 775257,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "4_44cb5917-7e66-4b3f-beee-783c75daa4db_1790242154830.JPG",
+    "bytes": 128258,
+    "sha256": "8186b6df91aa2fa5b0d9972bb3bc8853b2a8ba8028ae81ef27e1e9d834783e98",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "8186b6df91aa2fa5b0d9972bb3bc8853b2a8ba8028ae81ef27e1e9d834783e98",
+    "repositoryBytes": 128258,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "4_f176c8ba-b0e0-4e2b-a5e9-19ccdaa5c6c6_1790242188194.JPG",
+    "bytes": 141788,
+    "sha256": "b4bb2e7d52b22352cc758e7a55005846f5b52de6f86ddad517485be176c69234",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "b4bb2e7d52b22352cc758e7a55005846f5b52de6f86ddad517485be176c69234",
+    "repositoryBytes": 141788,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "4e5d4415-84a2-4df2-8b30-9ce83a40c4bb_1790631664902.jpeg",
+    "bytes": 562373,
+    "sha256": "31fd9c2ba3429d248911f56a9dbe83031b33953a2bc68d3d4e0f979b473ef864",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "31fd9c2ba3429d248911f56a9dbe83031b33953a2bc68d3d4e0f979b473ef864",
+    "repositoryBytes": 562373,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "5_1e8d8854-df5d-4240-8ee7-5231d125b503_1790242154830.JPG",
+    "bytes": 148592,
+    "sha256": "9128e9134a32cc5db889a774f52159f786abbb4168d7b4b2eef5a82178437e99",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "9128e9134a32cc5db889a774f52159f786abbb4168d7b4b2eef5a82178437e99",
+    "repositoryBytes": 148592,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "5_2_1790611121491.png",
+    "bytes": 1187751,
+    "sha256": "b2ff455dfd725330499930b8a1d8b416aac7e81cf3dcaeeb7498c6ff59e6ca1d",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "b2ff455dfd725330499930b8a1d8b416aac7e81cf3dcaeeb7498c6ff59e6ca1d",
+    "repositoryBytes": 1187751,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "5_32eab33f-a845-4e24-bef3-ebaf30515748_1790242188194.JPG",
+    "bytes": 67034,
+    "sha256": "19c340cab01dbb64b4caec326579921f596bb3892d9a73825e25c3e6f9e7e505",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "19c340cab01dbb64b4caec326579921f596bb3892d9a73825e25c3e6f9e7e505",
+    "repositoryBytes": 67034,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "6_1_1790611121491.png",
+    "bytes": 1062389,
+    "sha256": "ae12095870d6bc4cbd04b7542c827c3dfc9e9e831aee49afbcf730539169fa75",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "ae12095870d6bc4cbd04b7542c827c3dfc9e9e831aee49afbcf730539169fa75",
+    "repositoryBytes": 1062389,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "6_58bd8635-e67d-464f-b5fe-9625b044b951_1790242154830.JPG",
+    "bytes": 117497,
+    "sha256": "30bc7f9389bc1fa176f1ac384eb1ce5540a82c6c48446539b0e82e497ed43c18",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "30bc7f9389bc1fa176f1ac384eb1ce5540a82c6c48446539b0e82e497ed43c18",
+    "repositoryBytes": 117497,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "6_portrait_main_1790242188194.png",
+    "bytes": 2495024,
+    "sha256": "6f092edffce56c69b740524c835d81ed15ed5691a0b568265970898e7c651cbe",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "6f092edffce56c69b740524c835d81ed15ed5691a0b568265970898e7c651cbe",
+    "repositoryBytes": 2495024,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "7_456d15bd-e71e-4392-9486-226506f5f64e_1790242188194.JPG",
+    "bytes": 334148,
+    "sha256": "9461ba04e69975f0a87e80c6ff166cdc5ace33ae49b9beeec3705f033a81c673",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "9461ba04e69975f0a87e80c6ff166cdc5ace33ae49b9beeec3705f033a81c673",
+    "repositoryBytes": 334148,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "7_fe83654d-78b5-434c-a63f-63133889ae48_1790242154830.JPG",
+    "bytes": 367414,
+    "sha256": "aafec531fd21b279d26183b389f1e90f6adb9122868b40575831ef7a85cde494",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "aafec531fd21b279d26183b389f1e90f6adb9122868b40575831ef7a85cde494",
+    "repositoryBytes": 367414,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "7cc7594d-9bc3-4519-a26b-b052031ba108_1790634005027.JPG",
+    "bytes": 470716,
+    "sha256": "a56200ce87613e9295a4178c109ed5a820991290366060d6a3116a90adb71fe7",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "a56200ce87613e9295a4178c109ed5a820991290366060d6a3116a90adb71fe7",
+    "repositoryBytes": 470716,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "7f6eaafa-0387-434b-9d24-6df335e7068a_1790634005027.JPG",
+    "bytes": 313095,
+    "sha256": "a6e0374fd627f8c22021a00736ec2ea9c14cdadbab90fdc41e5155da49c9029d",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "a6e0374fd627f8c22021a00736ec2ea9c14cdadbab90fdc41e5155da49c9029d",
+    "repositoryBytes": 313095,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "8_238db22c-d775-4443-94e0-e9b9e7f63565_1790242188194.JPG",
+    "bytes": 425409,
+    "sha256": "49b61c10d6d024621323f64ec1a4c48ea524fb2ec8b148879482cbaef302a88c",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "49b61c10d6d024621323f64ec1a4c48ea524fb2ec8b148879482cbaef302a88c",
+    "repositoryBytes": 425409,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "8_abd95629-ffdf-4647-9419-194f9bc09780_1790242154830.JPG",
+    "bytes": 104842,
+    "sha256": "1fa22a4fa98767d8a1330adfce8fc2f48008ca18d98d7c81f4f56f4279fc6d5f",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "1fa22a4fa98767d8a1330adfce8fc2f48008ca18d98d7c81f4f56f4279fc6d5f",
+    "repositoryBytes": 104842,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "9_089a80ae-9f08-47b8-b9fa-24b61ae86a3e_1790242154831.JPG",
+    "bytes": 83078,
+    "sha256": "0de495514d475bb56d5553084ecd45eceb0d4fd20674d510c39a50462823d6b1",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "0de495514d475bb56d5553084ecd45eceb0d4fd20674d510c39a50462823d6b1",
+    "repositoryBytes": 83078,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "9_24853459-1eba-4924-996c-ac6ddfd28142_1790242188195.JPG",
+    "bytes": 109405,
+    "sha256": "0fc92f867366ef05bfc9eba7f10f0f78238b0543ef3897259288b8447e6c7071",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "0fc92f867366ef05bfc9eba7f10f0f78238b0543ef3897259288b8447e6c7071",
+    "repositoryBytes": 109405,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "25e35db5-9213-4c4c-ba05-c5c5648c50ec_1790631664902.jpeg",
+    "bytes": 576370,
+    "sha256": "63c6c1dfc836ab490b8999f8950ea3374f5ffbef2289eab16ae8bf7e450ad36b",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "63c6c1dfc836ab490b8999f8950ea3374f5ffbef2289eab16ae8bf7e450ad36b",
+    "repositoryBytes": 576370,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "436b101f-4aa9-437b-9ef5-28db724d980a_1790634005027.jpeg",
+    "bytes": 420798,
+    "sha256": "0299090fa972b894f3d1a4f5e37343eb1db2d802afcc4a3fc64df51841640aa9",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "0299090fa972b894f3d1a4f5e37343eb1db2d802afcc4a3fc64df51841640aa9",
+    "repositoryBytes": 420798,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "27185e99-1d73-48f4-b497-6f8f79e2342b_1790634005027.JPG",
+    "bytes": 256394,
+    "sha256": "4e1e26b818df6532dac0c546c28c539dc7d041e289f3063f326f7cf5a55b5020",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "4e1e26b818df6532dac0c546c28c539dc7d041e289f3063f326f7cf5a55b5020",
+    "repositoryBytes": 256394,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "05984739-1556-41ad-8d93-e26c53eab81a_1790631664902.jpeg",
+    "bytes": 187706,
+    "sha256": "70661514b2ac0d1fa48b2ad9ff45da9d0d3c10212a4940be6784d04023e1b63a",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "70661514b2ac0d1fa48b2ad9ff45da9d0d3c10212a4940be6784d04023e1b63a",
+    "repositoryBytes": 187706,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "affc0346-19c4-4dd5-a0c5-71e1892cc67f_1790634005027.JPG",
+    "bytes": 318495,
+    "sha256": "a46cef816a6c211f6113054892bfa8f001037d40a5f5deb14d13066b7708210a",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "a46cef816a6c211f6113054892bfa8f001037d40a5f5deb14d13066b7708210a",
+    "repositoryBytes": 318495,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "c2500d47-f32f-44c9-97b8-444cc0db6f14_1790631664902.jpeg",
+    "bytes": 540007,
+    "sha256": "ff0d045031672185561c6f5bb4323a6b7d5cc3cecb877362bc1d45bdb4f482c7",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "ff0d045031672185561c6f5bb4323a6b7d5cc3cecb877362bc1d45bdb4f482c7",
+    "repositoryBytes": 540007,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_04_48_11_PM_1790603386902.png",
+    "bytes": 1702635,
+    "sha256": "eb29dcce23c18a0c79b07ac1df01e185d465cf22b68cb4f75a1839c6d87d243c",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "eb29dcce23c18a0c79b07ac1df01e185d465cf22b68cb4f75a1839c6d87d243c",
+    "repositoryBytes": 1702635,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_04_58_56_PM_1790604328703.png",
+    "bytes": 2293755,
+    "sha256": "cf0a83a658d3725537855b4cea0cdce7f365c0ab86eac7279523ff14f9ca1b5c",
+    "sourceArchive": "Attached assets_pt1.zip",
+    "repositorySha256": "cf0a83a658d3725537855b4cea0cdce7f365c0ab86eac7279523ff14f9ca1b5c",
+    "repositoryBytes": 2293755,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_05_08_28_PM_1790604523410.png",
+    "bytes": 2109962,
+    "sha256": "3ee2d5bbb2a3ca5b97e758ba2ed4af87208d7c3e6fa021d589338df463c2a749",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "3ee2d5bbb2a3ca5b97e758ba2ed4af87208d7c3e6fa021d589338df463c2a749",
+    "repositoryBytes": 2109962,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_05_14_55_PM_1790604969651.png",
+    "bytes": 1960722,
+    "sha256": "0e1a618c3f623aa0ea6ee0237692ee3c4a1e64161b452c5fddd2cc908dd5e514",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "0e1a618c3f623aa0ea6ee0237692ee3c4a1e64161b452c5fddd2cc908dd5e514",
+    "repositoryBytes": 1960722,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_05_17_17_PM_1790605137622.png",
+    "bytes": 2004492,
+    "sha256": "ff0ca7ef26c4f7b3096ee9bf098e580dd460a21de085b47cd3abcebf2db8d0cf",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "ff0ca7ef26c4f7b3096ee9bf098e580dd460a21de085b47cd3abcebf2db8d0cf",
+    "repositoryBytes": 2004492,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_05_18_37_PM_1790605535934.png",
+    "bytes": 2020772,
+    "sha256": "1b2b774eeab94580a8d0737c19d3ec4d52f607595bd796da1d93ab5269a5b488",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "1b2b774eeab94580a8d0737c19d3ec4d52f607595bd796da1d93ab5269a5b488",
+    "repositoryBytes": 2020772,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ChatGPT_Image_Sep_28,_2026,_05_25_20_PM_1790605569816.png",
+    "bytes": 2592567,
+    "sha256": "7cdd1d36976d2ba534d70e610fbd5e7ebf3a659afa190536f94342fc1d178739",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "7cdd1d36976d2ba534d70e610fbd5e7ebf3a659afa190536f94342fc1d178739",
+    "repositoryBytes": 2592567,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "d719885e-c16f-4b48-b711-466559bb9c88_1790631664903.jpeg",
+    "bytes": 554490,
+    "sha256": "a415f7790ab1d6bbe1411db9000f4e7ce2ef762d905b484030f826a3d1338fe4",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "a415f7790ab1d6bbe1411db9000f4e7ce2ef762d905b484030f826a3d1338fe4",
+    "repositoryBytes": 554490,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "e84e1f6e-339c-42a5-a615-57f9610e7dca_1790634005028.jpeg",
+    "bytes": 2208332,
+    "sha256": "cfe15172b2ed6aea4c1a6170e743fb8688c881b421554a6feab9d9824d0854e4",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "cfe15172b2ed6aea4c1a6170e743fb8688c881b421554a6feab9d9824d0854e4",
+    "repositoryBytes": 2208332,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "ee6ddf35-e3a3-4794-8a5b-2f2bc89f1f95_1790634005028.JPG",
+    "bytes": 323095,
+    "sha256": "8e1a6310b38025f908d4cf6982667d6ac5ba2d1e4d849fb786ac7854e23f7baf",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "8e1a6310b38025f908d4cf6982667d6ac5ba2d1e4d849fb786ac7854e23f7baf",
+    "repositoryBytes": 323095,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "f5ba391d-4df6-40da-be6f-88370051cbc9_1790631664903.jpeg",
+    "bytes": 752439,
+    "sha256": "ff7b22550386d513ab82b5096b822121fe58fa21e333d6d4904c9d59703282ef",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "ff7b22550386d513ab82b5096b822121fe58fa21e333d6d4904c9d59703282ef",
+    "repositoryBytes": 752439,
+    "redactedPrivateAddress": false
+  },
+  {
+    "path": "Pasted-1-Opening-2-About-Roy-A-100-150-word-introduction--1790_1790292042180.txt",
+    "bytes": 5548,
+    "sha256": "edc04dc15512eaf39a26e72a8aae32110288ab1e48e5e9d37b84be9360dc4cad",
+    "sourceArchive": "Attached assets pt2.zip",
+    "repositorySha256": "3212a7594650b6bbd248b6e3b2f42ce751546aaab86b06bdaa619796f91db2ef",
+    "repositoryBytes": 5567,
+    "redactedPrivateAddress": true
+  }
+]
