@@ -1,0 +1,171 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+paths:
+  /memories:
+    get:
+      operationId: listMemories
+      responses:
+        "200":
+          description: Approved memories only
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/Memory" }
+    post:
+      operationId: submitMemory
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/MemoryInput" }
+      responses:
+        "201":
+          description: Pending moderation
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Message" }
+  /admin/session:
+    get:
+      operationId: getAdminSession
+      responses:
+        "200":
+          description: Session status
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/AdminSession" }
+    post:
+      operationId: loginAdmin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/AdminCredentials" }
+      responses:
+        "200":
+          description: Signed in
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/AdminSession" }
+    delete:
+      operationId: logoutAdmin
+      responses:
+        "204": { description: Signed out }
+  /admin/memories:
+    get:
+      operationId: listAdminMemories
+      responses:
+        "200":
+          description: Private moderation list
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/AdminMemory" }
+  /admin/memories/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema: { type: integer }
+    patch:
+      operationId: moderateMemory
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ModerationInput" }
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Message" }
+    delete:
+      operationId: deleteMemory
+      responses:
+        "204": { description: Deleted }
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  schemas:
+    Memory:
+      type: object
+      required: [id, name, relationship, promptKey, memoryText]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        relationship: { type: string }
+        promptKey: { type: string }
+        memoryText: { type: string }
+    MemoryInput:
+      type: object
+      required: [name, relationship, promptKey, memoryText, consent]
+      properties:
+        name: { type: string, minLength: 2, maxLength: 80 }
+        relationship: { type: string, minLength: 2, maxLength: 100 }
+        promptKey: { type: string, enum: [moment, lesson, funny, always, now, threeWords] }
+        memoryText: { type: string, minLength: 10, maxLength: 3000 }
+        consent: { type: boolean, enum: [true] }
+        email: { type: string, format: email, maxLength: 254 }
+        website: { type: string, maxLength: 200 }
+    AdminMemory:
+      allOf:
+        - $ref: "#/components/schemas/Memory"
+        - type: object
+          required: [status, createdAt]
+          properties:
+            email: { type: [string, "null"] }
+            status: { type: string, enum: [pending, approved, rejected] }
+            createdAt: { type: string }
+            reviewedAt: { type: [string, "null"] }
+    ModerationInput:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string, enum: [pending, approved, rejected] }
+    AdminCredentials:
+      type: object
+      required: [password]
+      properties:
+        password: { type: string, minLength: 1, maxLength: 200 }
+    AdminSession:
+      type: object
+      required: [authenticated, configured]
+      properties:
+        authenticated: { type: boolean }
+        configured: { type: boolean }
+    Message:
+      type: object
+      required: [message]
+      properties:
+        message: { type: string }
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

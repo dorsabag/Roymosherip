@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --font-sans: var(--app-font-sans);
+  --radius-md: var(--radius);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-lg: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 40 20% 97%; /* Warm, slightly off-white */
+  --foreground: 20 10% 20%; /* Dark warm gray */
+  --border: 40 10% 85%;
+  --input: 40 10% 85%;
+  --ring: 25 30% 60%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 20 10% 20%;
+  --card-border: 40 10% 85%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 10% 20%;
+  --popover-border: 40 10% 85%;
+  
+  --primary: 25 30% 45%; /* Muted terracotta/warm tone */
+  --primary-foreground: 40 20% 97%;
+  
+  --secondary: 40 15% 90%;
+  --secondary-foreground: 20 10% 20%;
+  
+  --muted: 40 15% 92%;
+  --muted-foreground: 40 5% 45%;
+  
+  --accent: 40 15% 90%;
+  --accent-foreground: 20 10% 20%;
+  
+  --destructive: 0 60% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --app-font-sans: 'Heebo', sans-serif;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Each cutout has its own visual lane, so a face never sits underneath copy
+   or controls. The image still reaches the outer edge of its section. */
+.roy-cutout-section {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.roy-cutout-section > :not(.roy-cutout-layer) {
+  position: relative;
+  z-index: 1;
+  order: 1;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.roy-cutout-layer {
+  position: relative;
+  z-index: 0;
+  order: 2;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  direction: ltr;
+  width: calc(100% + 2rem);
+  margin-inline: -1rem;
+  padding-top: 2rem;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.roy-cutout-picture {
+  display: block;
+  flex: none;
+  width: var(--cutout-width);
+  opacity: .54;
+  will-change: transform;
+}
+
+.roy-cutout-picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.roy-cutout--about {
+  --cutout-width: min(62vw, 310px);
+}
+.roy-cutout--timeline {
+  --cutout-width: min(60vw, 300px);
+}
+.roy-cutout--fun-facts {
+  --cutout-width: min(62vw, 310px);
+}
+.roy-cutout--dictionary {
+  --cutout-width: min(68vw, 340px);
+}
+.roy-cutout--memories {
+  --cutout-width: min(62vw, 310px);
+}
+.roy-cutout--places {
+  --cutout-width: min(62vw, 310px);
+}
+.roy-cutout--music {
+  --cutout-width: min(65vw, 325px);
+}
+
+.roy-cutout--timeline,
+.roy-cutout--fun-facts,
+.roy-cutout--dictionary {
+  justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .roy-cutout-section {
+    flex-direction: row;
+    align-items: stretch;
+    direction: ltr;
+    gap: clamp(1.5rem, 3vw, 4rem);
+    padding-left: 0;
+    padding-right: clamp(1rem, 2vw, 2rem);
+  }
+
+  .roy-cutout-section--right {
+    padding-left: clamp(1rem, 2vw, 2rem);
+    padding-right: 0;
+  }
+
+  .roy-cutout-section > :not(.roy-cutout-layer) {
+    flex: 1 1 0;
+    align-self: center;
+    min-width: 0;
+    direction: rtl;
+  }
+
+  .roy-cutout-layer {
+    flex: 0 0 var(--cutout-width);
+    order: 0;
+    width: var(--cutout-width);
+    margin: 0;
+  }
+
+  .roy-cutout-section--right .roy-cutout-layer {
+    order: 2;
+  }
+
+  .roy-cutout--timeline,
+  .roy-cutout--memories {
+    align-items: flex-start;
+  }
+
+  .roy-cutout--timeline .roy-cutout-picture,
+  .roy-cutout--memories .roy-cutout-picture {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%);
+  }
+
+  .roy-cutout--about { --cutout-width: min(32vw, 480px); }
+  .roy-cutout--timeline { --cutout-width: min(36vw, 540px); }
+  .roy-cutout--fun-facts { --cutout-width: min(34vw, 500px); }
+  .roy-cutout--dictionary { --cutout-width: min(34vw, 500px); }
+  .roy-cutout--memories { --cutout-width: min(35vw, 520px); }
+  .roy-cutout--places { --cutout-width: min(34vw, 500px); }
+  .roy-cutout--music { --cutout-width: min(33vw, 490px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roy-cutout-picture {
+    will-change: auto;
+    transform: none !important;
+  }
+}

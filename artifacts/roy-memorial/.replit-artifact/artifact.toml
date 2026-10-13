@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "רועי משה | לזכרו"
+description = "A Hebrew RTL memorial celebrating Roy Moshe’s life, with moderated visitor memories and family-approved content."
+version = "1.0.0"
+id = "artifacts/roy-memorial"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24670
+
+[services.development]
+run = "pnpm --filter @workspace/roy-memorial run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/roy-memorial", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/roy-memorial/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24670"
+BASE_PATH = "/"

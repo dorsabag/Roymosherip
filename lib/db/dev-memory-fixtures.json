@@ -1,0 +1,10 @@
+[
+  {
+    "name": "[DEMO MEMORY — שם לדוגמה בלבד]",
+    "relationship": "[PLACEHOLDER: הקשר לרועי]",
+    "promptKey": "moment",
+    "memoryText": "[DEMO MEMORY — replace before production: כאן יופיע זיכרון אמיתי רק לאחר מסירתו ואישור המשפחה]",
+    "consent": true,
+    "status": "pending"
+  }
+]
