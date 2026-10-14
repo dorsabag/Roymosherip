@@ -1,6 +1,9 @@
 # Cloud migration status
 
-Production deployment preparation is now documented in [Render deployment](render-deployment.md). The original imported version remains in Git history; subsequent changes add combined website/API hosting, deployment scripts, browser-zoom and Hebrew navigation-label fixes, approved metadata, and omission of unfinished placeholder details.
+The selected production target is Sites, documented in [Sites deployment](sites-deployment.md).
+The Workers/D1 adaptation preserves the existing memorial frontend, media, moderated memories,
+and private submission details. Administration uses Sites' ChatGPT sign-in restricted to the owner.
+The original imported version and Express/PostgreSQL implementation remain in Git history.
 
 The original Replit project was imported from owner-supplied archives without changing its application source, package declarations, or lockfile. macOS metadata, previous build output, and compiler caches were omitted. The memorial's 48 public assets are included.
 
@@ -21,7 +24,9 @@ Use the existing checkout in each isolated Codex task; no additional worktree is
 
 ## Before public deployment
 
-Choose and configure public hosting for the frontend and Node API plus managed PostgreSQL. Supply production `DATABASE_URL`, `SESSION_SECRET`, and `ADMIN_PASSWORD_HASH` securely. Development credentials must not be reused in production. Route `/api` to the API and support frontend SPA paths including `/admin`.
+Sites provides public hosting and D1 persistence. `ADMIN_EMAIL` and `RATE_LIMIT_SECRET`
+are configured as Sites secrets; development credentials are not reused. `/api` uses the
+Worker, and `/admin` has server-side authentication and authorization.
 
 The ZIP imports do not establish that existing visitor memories were transferred. If live submissions exist, export and migrate the production database through a private, controlled process. Preserve the existing site until the new deployment and data are verified.
 
