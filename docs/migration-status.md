@@ -1,5 +1,7 @@
 # Cloud migration status
 
+Production deployment preparation is now documented in [Render deployment](render-deployment.md). The original imported version remains in Git history; subsequent changes add combined website/API hosting, deployment scripts, browser-zoom and Hebrew navigation-label fixes, approved metadata, and omission of unfinished placeholder details.
+
 The original Replit project was imported from owner-supplied archives without changing its application source, package declarations, or lockfile. macOS metadata, previous build output, and compiler caches were omitted. The memorial's 48 public assets are included.
 
 ## Verified in the Codex cloud workspace

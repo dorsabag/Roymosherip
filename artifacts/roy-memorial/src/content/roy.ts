@@ -228,7 +228,8 @@ export const royContent: RoyContent = {
       id: "1",
       term: "״אמור מעט, עשה הרבה״",
       type: "ביטוי",
-      definition: "[PLACEHOLDER: משמעות הביטוי כפי שרועי השתמש בו]"
+      // No family-approved definition has been supplied yet.
+      definition: ""
     }
   ],
 
@@ -318,16 +319,10 @@ export const royContent: RoyContent = {
     }
   ],
 
-  legacy: [
-    {
-      id: "1",
-      title: "[PLACEHOLDER: כותרת מורשת]",
-      description: "[PLACEHOLDER: תיאור מורשת]"
-    }
-  ],
+  legacy: [],
   
   footer: {
-    closingSentence: "[PLACEHOLDER: משפט סיום או ציטוט]",
+    closingSentence: "",
     madeWithLove: "נבנה באהבה על ידי המשפחה והחברים של רועי.",
     social: []
   }

@@ -45,7 +45,7 @@ export function Navigation() {
           className="md:hidden p-2 -mr-2 text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md"
           onClick={toggleMenu}
           aria-expanded={mobileMenuOpen}
-          aria-label="Toggle navigation menu"
+          aria-label="פתיחה וסגירה של תפריט הניווט"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>

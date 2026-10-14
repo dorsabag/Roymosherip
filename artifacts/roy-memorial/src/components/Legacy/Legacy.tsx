@@ -38,9 +38,9 @@ export function Legacy() {
         </div>
         
         <div className="pt-16 pb-8 text-center space-y-8">
-          <p className="text-2xl font-medium text-foreground/80 max-w-2xl mx-auto leading-relaxed">
+          {royContent.footer.closingSentence && <p className="text-2xl font-medium text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             <bdi>{royContent.footer.closingSentence}</bdi>
-          </p>
+          </p>}
           
           <div className="pt-8 border-t border-border/50 inline-block w-48"></div>
           

@@ -18,6 +18,13 @@ export function RoyDictionary() {
         
         <div className="space-y-4">
           {dictionary.map(entry => {
+            if (!entry.definition && !entry.story) {
+              return (
+                <div key={entry.id} className="border rounded-2xl bg-background shadow-sm p-6">
+                  <h3 className="text-xl font-bold text-foreground"><bdi>{entry.term}</bdi></h3>
+                </div>
+              );
+            }
             const isOpen = openId === entry.id;
             return (
               <div 
