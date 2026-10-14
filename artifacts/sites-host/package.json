@@ -1,0 +1,25 @@
+{
+  "name": "@workspace/sites-host",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "db:generate": "drizzle-kit generate --config drizzle.config.ts",
+    "test": "node --test ../../tests/sites-worker.test.mjs"
+  },
+  "dependencies": {
+    "@workspace/api-zod": "workspace:*",
+    "drizzle-orm": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@types/node": "catalog:",
+    "drizzle-kit": "0.31.10",
+    "esbuild": "0.28.2",
+    "typescript": "~5.9.3",
+    "vite": "catalog:",
+    "wrangler": "4.92.0"
+  }
+}

@@ -1,34 +1,25 @@
-import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { 
   useGetAdminSession, 
-  useLoginAdmin, 
-  useLogoutAdmin, 
   useListAdminMemories, 
   useModerateMemory, 
   useDeleteMemory,
   getListAdminMemoriesQueryKey,
   getListMemoriesQueryKey,
-  getGetAdminSessionQueryKey
 } from "@workspace/api-client-react";
 import { memoryPrompts } from "@/data/prompts";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { ModerationInputStatus } from "@workspace/api-client-react";
 import { format } from "date-fns";
-import { he } from "date-fns/locale";
 
 export default function Admin() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
-  const [password, setPassword] = useState("");
   
   const { data: session, isLoading: isSessionLoading, isError: sessionError } = useGetAdminSession();
-  const login = useLoginAdmin();
-  const logout = useLogoutAdmin();
   const { data: memories = [], isLoading: isMemoriesLoading, isError: memoriesError } = useListAdminMemories({
     query: {
       enabled: session?.authenticated === true,
@@ -38,28 +29,6 @@ export default function Admin() {
   
   const moderate = useModerateMemory();
   const deleteMem = useDeleteMemory();
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    login.mutate({ data: { password } }, {
-      onSuccess: () => {
-        queryClient.invalidateQueries({ queryKey: getGetAdminSessionQueryKey() });
-        setPassword("");
-      },
-      onError: () => {
-        toast({ title: "שגיאה", description: "סיסמה שגויה", variant: "destructive" });
-      }
-    });
-  };
-
-  const handleLogout = () => {
-    logout.mutate(undefined, {
-      onSuccess: () => {
-        queryClient.removeQueries({ queryKey: getListAdminMemoriesQueryKey() });
-        queryClient.invalidateQueries({ queryKey: getGetAdminSessionQueryKey() });
-      }
-    });
-  };
 
   const handleModerate = (id: number, status: ModerationInputStatus) => {
     moderate.mutate({ id, data: { status } }, {
@@ -99,7 +68,7 @@ export default function Admin() {
             <div className="w-16 h-16 bg-destructive/10 text-destructive rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">!</div>
             <h1 className="text-2xl font-bold text-destructive">הגדרת מערכת נדרשת</h1>
             <p className="text-muted-foreground">
-              מערכת הניהול אינה מוגדרת. יש להגדיר את משתנה הסביבה <code>ADMIN_PASSWORD_HASH</code> בהגדרות הסודות (Secrets) של Replit.
+              הגישה לניהול אינה זמינה כרגע. יש לפנות למנהל האתר.
             </p>
           </CardContent>
         </Card>
@@ -114,24 +83,11 @@ export default function Admin() {
           <CardContent className="pt-8">
             <div className="text-center mb-8 space-y-2">
               <h1 className="text-3xl font-bold">ניהול זיכרונות</h1>
-              <p className="text-muted-foreground">הכנס סיסמת מנהל מערכת</p>
+              <p className="text-muted-foreground">הגישה מיועדת למנהל האתר בלבד</p>
             </div>
-            <form onSubmit={handleLogin} className="space-y-4">
-              <label htmlFor="admin-password">סיסמת ניהול</label>
-              <Input
-                id="admin-password"
-                autoComplete="current-password"
-                type="password"
-                placeholder="סיסמה"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                className="h-12 bg-background text-left"
-                dir="ltr"
-              />
-              <Button type="submit" className="w-full h-12" disabled={login.isPending}>
-                {login.isPending ? "מתחבר..." : "התחבר"}
-              </Button>
-            </form>
+            <Button asChild className="w-full h-12">
+              <a href="/signin-with-chatgpt?return_to=%2Fadmin" target="_top">התחבר עם ChatGPT</a>
+            </Button>
           </CardContent>
         </Card>
       </div>
@@ -201,7 +157,7 @@ export default function Admin() {
       <header className="bg-background border-b sticky top-0 z-10">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <h1 className="font-bold text-xl">מערכת ניהול - רועי משה</h1>
-          <Button variant="ghost" onClick={handleLogout}>התנתק</Button>
+          <Button variant="ghost" asChild><a href="/signout-with-chatgpt?return_to=%2F" target="_top">התנתק</a></Button>
         </div>
       </header>
 
