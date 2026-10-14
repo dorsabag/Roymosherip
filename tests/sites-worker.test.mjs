@@ -28,7 +28,8 @@ before(async () => {
     assets: {
       directory: path.join(root, "dist/client"), binding: "ASSETS",
       routerConfig: { has_user_worker: true, invoke_user_worker_ahead_of_assets: true },
-      assetConfig: { html_handling: "none", not_found_handling: "none" },
+      // Match hosted canonical HTML routing: /index.html redirects to /.
+      assetConfig: { html_handling: "auto-trailing-slash", not_found_handling: "none" },
     },
   });
   db = await mf.getD1Database("DB");
@@ -65,6 +66,8 @@ test("Administration requires the configured owner's dispatch identity, on pages
   assert.equal((await request("/admin", "GET", undefined, visitor)).status, 403);
   const authorized = await request("/admin", "GET", undefined, owner);
   assert.equal(authorized.status, 200);
+  assert.equal(authorized.headers.get("Location"), null);
+  assert.match(await authorized.text(), /lang="he" dir="rtl"/);
   assert.match(authorized.headers.get("Cache-Control"), /no-store/);
   assert.equal(authorized.headers.get("X-Robots-Tag"), "noindex, nofollow");
   assert.deepEqual(await (await request("/api/admin/session")).json(), { authenticated: false, configured: true });

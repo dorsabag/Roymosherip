@@ -138,17 +138,19 @@ export default {
       if (url.pathname === "/admin" || url.pathname === "/admin/") {
         if (!identity(request)) return new Response(null, { status: 302, headers: { ...noStore, Location: "/signin-with-chatgpt?return_to=%2Fadmin" } });
         if (!isAdmin(request, env)) return error(403, "אין הרשאה לניהול האתר");
-        const response = await env.ASSETS.fetch(new Request(new URL("/index.html", url), request));
+        // Fetch the document at its canonical asset URL. Fetching /index.html
+        // can produce a platform 307 to /, which must never escape /admin.
+        const response = await env.ASSETS.fetch(new Request(new URL("/", url), request));
         const headers = new Headers(response.headers);
         for (const [key, value] of Object.entries(noStore)) headers.set(key, value);
         headers.set("X-Robots-Tag", "noindex, nofollow");
         return new Response(response.body, { status: response.status, headers });
       }
       if (!["GET", "HEAD"].includes(request.method)) return error(405, "בקשה לא תקינה");
-      const path = url.pathname === "/" ? "/index.html" : url.pathname;
+      const path = url.pathname;
       const response = await env.ASSETS.fetch(new Request(new URL(path, url), request));
       if (response.status === 404 && !url.pathname.split("/").pop()?.includes(".")) {
-        const page = await env.ASSETS.fetch(new Request(new URL("/index.html", url), request));
+        const page = await env.ASSETS.fetch(new Request(new URL("/", url), request));
         return new Response(page.body, { status: 404, headers: page.headers });
       }
       return response;
